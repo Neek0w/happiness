@@ -26,6 +26,29 @@ def tableau_corr():
                 square=True
                 )
 
+''' 
+Nous pouvons s'accorder sur le fait qu'il y a une corrélation entre Happiness Score, 
+Economy (GDP per capita), Family (Social support) and Health (Healthy life expectancy).
+'''
+
+# Courbe pour démontrer le tableau de corrélation
+
+data_plot = data2019[["Score", "PIB par habitant", "Famille", "Esperance de vie"]]
+
+def corr_sub():
+    data_plot.plot(subplots=True)
+    data_plot.show()
+
+def corr_all():
+    data_plot.plot()
+    data_plot.show()
+
+def corr_point():
+    data_plot.plot(kind="scatter", x="PIB par habitant", y="Score")
+    data_plot.show()
+
+'''Nous pouvons voir la relation positive entre le hapiness score et l'économie du pays '''
+
 # création de la carte
 
 def map ():
