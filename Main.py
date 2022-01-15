@@ -234,5 +234,3 @@ def lib_10la():
     plt.ylabel('Pays')
     plt.title('Classement de la liberté des 10 derniers pays')
     plt.show()
-
-vie_10er()
